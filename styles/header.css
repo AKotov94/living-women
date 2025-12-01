@@ -1,0 +1,37 @@
+.header__container {
+  display: grid;
+  grid-template-columns: auto max-content min-content;
+  block-size: 100%;
+  align-items: center;
+  font-size: var(--font-size-desk);
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header__menu {
+  display: flex;
+  gap: var(--lo-header-gap);
+  align-items: center;
+}
+
+.navigation__links-list {
+  display: flex;
+  gap: var(--lo-header-gap);
+  font-family: var(--font-menu);
+}
+
+.socials {
+  display: flex;
+  gap: var(--lo-header-gap);
+  font-size: 0;
+}
+
+.socials__icon{
+  inline-size: 30px;
+  block-size: 30px;
+  color: var(--col-page-bgMain);
+}

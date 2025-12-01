@@ -1,0 +1,36 @@
+/* Breakpoints:
+
+xs 360px >= width > 568px
+s 568px >= width > 768px
+m 768px >= width > 1024px
+l 1024px >= width > 1300px
+xl 1300px >= width
+
+max-width (container) 1680px
+
+*/
+
+:root {
+    /* Цвета */
+
+    --col-page-bgMain: #C9BECF;
+    --col-header-bgMain: #8A7796;
+
+    /* Layout */
+
+    --lo-container-maxSize: 100dvi;
+    --lo-fullSection: 100dvi;
+    --lo-header-blockSize: 10dvb;
+    --lo-main-padding: clamp(1rem, -0.909rem + 8.485vw, 8rem);
+    --lo-main-gap: 60px;
+    --lo-header-gap: clamp(0.625rem, -0.428rem + 2.193vw, 1.875rem);
+
+    /* Типографика */
+
+    --font-main: 'Onest', sans-serif;
+    --font-secondary: 'Cormorant Unicase', serif;
+    --font-menu: 'Bona Nova SC', serif;
+    --font-size: clamp(2rem, 0.909rem + 4.848vw, 6rem);
+    --font-size-desk: clamp(1rem, 0.952rem + 0.213vw, 1.125rem);
+    --font-size-quote: clamp(1.125rem, 1.0057rem + 0.5303vw, 1.5625rem);
+  }

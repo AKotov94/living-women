@@ -1,0 +1,63 @@
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Unicase";
+  src: /*local('Cormorant Unicase'),*/ 
+    url(./Comporant_Unicase/cormorant-unicase-v25-cyrillic-regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Unicase";
+  src: /*local('Cormorant Unicase'),*/
+    url(./Comporant_Unicase/cormorant-unicase-v25-cyrillic-500.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Unicase";
+  src: /*local('Cormorant Unicase'),*/
+    url(./Comporant_Unicase/cormorant-unicase-v25-cyrillic-700.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: "Onest";
+  src: /*local('Onest'),*/ 
+    url(./Onest/onest-v9-cyrillic-regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Onest";
+  src: /*local('Onest'),*/
+    url(./Onest/onest-v9-cyrillic-500.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Onest";
+  src: /*local('Onest'),*/
+    url(./Onest/onest-v9-cyrillic-700.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Bona Nova SC";
+  src: /*local('Bona Nova SC'),*/
+    url(./Bona_Nova_SC/bona-nova-sc-v1-cyrillic-regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
