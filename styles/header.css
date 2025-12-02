@@ -1,6 +1,7 @@
 .header__container {
   display: grid;
-  grid-template-columns: auto max-content min-content;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
   block-size: 100%;
   align-items: center;
   font-size: var(--font-size-desk);
