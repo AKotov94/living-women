@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   background-image: url(../images/page_cover_img.avif);
   background-position: 50% 35%;
   background-size: cover;
@@ -50,13 +50,13 @@
 }
 
 .img-left {
-  max-block-size: clamp(18.75rem, 11.932rem + 30.303vw, 43.75rem)/*clamp(16.875rem, 10.293rem + 29.255vw, 34.063rem)*/;
+  max-block-size: clamp(18.75rem, 11.932rem + 30.303vw, 43.75rem)/*clamp(16.875rem, 10.293rem + 29.255vw, 34.063rem);
   bottom: 0;
   left: 0;
 }
 
 .img-right {
-  max-block-size: clamp(15.625rem, 9.659rem + 26.515vw, 37.5rem)/*clamp(15.313rem, 11.602rem + 16.489vw, 25rem)*/;
+  max-block-size: clamp(15.625rem, 9.659rem + 26.515vw, 37.5rem)/*clamp(15.313rem, 11.602rem + 16.489vw, 25rem);
   top: 0;
   right: 0;
   transform: translate(40%, -20%);
@@ -133,7 +133,7 @@
   /*background: radial-gradient(farthest-corner, #1E132150, #1E132100 75%);
   -webkit-text-stroke: 15px #1E132105;
   radial-gradient(closest-side, #1E132150, #1E132100);*/
-  /*linear-gradient(#1E132100 0%, #1E132150 50%, #1E132100 100%);*/
+  /*linear-gradient(#1E132100 0%, #1E132150 50%, #1E132100 100%);
 }
 
 .hero__desc {
@@ -148,7 +148,7 @@
   mix-blend-mode: luminosity;
   mix-blend-mode: multiply;
   mix-blend-mode: darken;
-  */
+  
   text-shadow: 
   1px 1px 15px #C9BECF,
   -1px -1px 15px #C9BECF;
@@ -195,4 +195,61 @@
   padding: 22px 45px;
   position: relative;
   z-index: 10;
+} */
+
+.hero {
+  background-image: url('/images/cover.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  display: block;
+  block-size: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: var(--col-hero-cover);
+  opacity: 80%;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  justify-content: space-between;
+}
+
+.hero__name {
+  grid-row: 1;
+  grid-column: span 3;
+}
+
+.hero__desc {
+  grid-row: 2;
+  grid-column: span 3;
+}
+
+.hero__img-right {
+  display: block;
+  inline-size: 100%;
+  object-fit: contain;
+  grid-column: 8 / 11;
+  
+}
+
+.hero__button {
+  grid-row: 3;
+  grid-column: 1 / -1;
+  min-inline-size: 330px;
+  color: #FBF6FF;
+  background-color: #150A19;
+  border-radius: 25px;
+  padding: 22px 45px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 500;
 }

@@ -34,7 +34,8 @@ a {
 }
 
 button,
-a {
+a,
+dialog {
   padding: 0;
   color: currentColor;
   font-family: inherit;

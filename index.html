@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/layout.css">
   <link rel="stylesheet" href="./styles/header.css">
-  <!-- <link rel="stylesheet" href="./styles/hero.css">
-  <link rel="stylesheet" href="./styles/about.css"> -->
+  <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/about.css">
 
   <link rel="icon" href=".ico" />
   <link rel="icon" href=".svg" />
@@ -33,7 +33,7 @@
           </ul>
         </nav>
         <button type="button" onclick="window['header__menu'].showModal()" class="burger__button">
-          <svg viewBox="0 0 31 18" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 31 18" xmlns="http://www.w3.org/2000/svg" width="32px" class="burger__svg">
             <use href="./svg/burger.svg"></use>
           </svg>
         </button>
@@ -69,7 +69,11 @@
               </a>
             </li>
           </ul>
-          <button type="button" onclick="window['header__menu'].close()">закрыть</button>
+          <button type="button" onclick="window['header__menu'].close()" class="burger__button-close">
+            <svg viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg" width="25px">
+              <use href="./svg/close_burger.svg"></use>
+            </svg>
+          </button>
         </dialog>
         
         <ul class="socials pc">
@@ -100,24 +104,23 @@
   </header>
   <main class="main">
     <section class="hero">
-      <img src="./images/hero-img-left.webp" alt="" class="hero__img img-left">
-      <img src="./images/hero-img-right.webp" alt="" class="hero__img img-right">
       <div class="hero__content">
-      <p class="hero__name">Татьяна Малахова</p>
-      <p class="hero__desc pc">психолог, фасилитатор женских групповых программ, работающий в области личностного роста и гармонизации внутреннего состояния женщин</p>
-      <p class="hero__desc mobile">психолог, фасилитатор женских групповых программ</p>
-      <button class="hero__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться на консультацию</button>
-      <dialog id="record">
-        <h2>Записаться на консультацию</h2>
-        <form action="">
-          <label for=""></label>
-          <input type="text">
-          <button></button>
-        </form>
-        <button type="button" onclick="window['record'].close()">
-          закрыть
-        </button>
-      </dialog>
+        <p class="hero__name">Татьяна Малахова</p>
+        <p class="hero__desc pc">психолог, фасилитатор женских групповых программ, работающий в области личностного роста и гармонизации внутреннего состояния женщин</p>
+        <p class="hero__desc mobile">психолог, фасилитатор женских групповых программ</p>
+        <img src="./images/hero-img-right.webp" alt="" class="hero__img-right">
+        <button class="hero__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться на консультацию</button>
+        <dialog id="record">
+          <h2>Записаться на консультацию</h2>
+          <form action="">
+            <label for=""></label>
+            <input type="text">
+            <button></button>
+          </form>
+          <button type="button" onclick="window['record'].close()">
+            закрыть
+          </button>
+        </dialog>
       </div>
       <p class="hero__quote quote-left">“Чем глубже я изучаю себя, тем яснее вижу”</p>
       <p class="hero__quote quote-right">“Моя работа — помочь тебе снова прикоснуться к&nbsp;себе настоящей”</p>
