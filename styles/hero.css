@@ -198,7 +198,7 @@
 } */
 
 .hero {
-  background-image: url('/images/cover.webp');
+  background-image: url('../images/cover.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
