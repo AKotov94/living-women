@@ -193,4 +193,6 @@
   background-color: #150A19;
   border-radius: 25px;
   padding: 22px 45px;
+  position: relative;
+  z-index: 10;
 }

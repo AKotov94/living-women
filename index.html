@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/layout.css">
   <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/hero.css">
-  <link rel="stylesheet" href="./styles/about.css">
+  <!-- <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/about.css"> -->
 
   <link rel="icon" href=".ico" />
   <link rel="icon" href=".svg" />
@@ -32,6 +32,46 @@
             <li class="navigation__item"><a href="">Контакты</a></li>
           </ul>
         </nav>
+        <button type="button" onclick="window['header__menu'].showModal()" class="burger__button">
+          <svg viewBox="0 0 31 18" xmlns="http://www.w3.org/2000/svg">
+            <use href="./svg/burger.svg"></use>
+          </svg>
+        </button>
+        <dialog class="header__menu" id="header__menu">
+          <nav class="navigation">
+            <ul class="navigation__links-list mobile">
+              <li class="navigation__item"><a href="">Обо мне</a></li>
+              <li class="navigation__item"><a href="">С чем работаю</a></li>
+              <li class="navigation__item"><a href="">Отзывы</a></li>
+              <li class="navigation__item"><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="" class="social__link">
+                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                  <use href="./svg/whatsapp_icon.svg#whatsapp_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="social__link">
+                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                  <use href="./svg/telegram_icon.svg#telegram_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="social__link">
+                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                  <use href="./svg/vk_icon.svg#vk_icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button type="button" onclick="window['header__menu'].close()">закрыть</button>
+        </dialog>
+        
         <ul class="socials pc">
           <li class="socials__item">
             <a href="" class="social__link">
@@ -66,7 +106,18 @@
       <p class="hero__name">Татьяна Малахова</p>
       <p class="hero__desc pc">психолог, фасилитатор женских групповых программ, работающий в области личностного роста и гармонизации внутреннего состояния женщин</p>
       <p class="hero__desc mobile">психолог, фасилитатор женских групповых программ</p>
-      <button class="hero__button" type="button">Записаться на консультацию</button>
+      <button class="hero__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться на консультацию</button>
+      <dialog id="record">
+        <h2>Записаться на консультацию</h2>
+        <form action="">
+          <label for=""></label>
+          <input type="text">
+          <button></button>
+        </form>
+        <button type="button" onclick="window['record'].close()">
+          закрыть
+        </button>
+      </dialog>
       </div>
       <p class="hero__quote quote-left">“Чем глубже я изучаю себя, тем яснее вижу”</p>
       <p class="hero__quote quote-right">“Моя работа — помочь тебе снова прикоснуться к&nbsp;себе настоящей”</p>

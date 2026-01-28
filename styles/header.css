@@ -12,11 +12,11 @@
   text-transform: uppercase;
 }
 
-.header__menu {
+/* .header__menu {
   display: flex;
   gap: var(--lo-header-gap);
   align-items: center;
-}
+} */
 
 .navigation__links-list {
   display: flex;
@@ -30,8 +30,28 @@
   font-size: 0;
 }
 
-.socials__icon{
+.socials__icon {
   inline-size: 30px;
   block-size: 30px;
   color: var(--col-page-bgMain);
+}
+
+.pc {
+  display: none;
+}
+
+.mobile {
+  flex-direction: column;
+}
+
+.header__menu[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.burger__button {
+  inline-size: 32px;
+  background-color: transparent;
+  font-size: 0;
 }
