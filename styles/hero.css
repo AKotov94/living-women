@@ -238,12 +238,12 @@
   inline-size: 100%;
   object-fit: contain;
   grid-column: 8 / 11;
-  
+  grid-row: span 2;
 }
 
 .hero__button {
   grid-row: 3;
-  grid-column: 1 / -1;
+  grid-column: span 1 / -1;
   min-inline-size: 330px;
   color: #FBF6FF;
   background-color: #150A19;
@@ -252,4 +252,15 @@
   font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 500;
+  padding: 25px 50px;
+}
+
+.quote-left {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.quote-right {
+  grid-row: 4;
+  grid-column: span 1 / -1;
 }

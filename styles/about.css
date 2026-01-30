@@ -1,0 +1,68 @@
+.about > p {
+  margin-block-end: 20px;
+}
+
+.about__pic {
+  inline-size: 100%;
+  margin-block-end: 20px;
+}
+
+.about__star {
+  --star-size: 50px;
+  inline-size: var(--star-size);
+  margin-block-end: 20px;
+  animation: star_translate 10s ease-in-out infinite alternate;
+}
+
+@keyframes star_translate {
+  0% {
+    translate: 0;
+  }
+  20% {
+    translate: calc(var(--star-size) + 20px);
+  }
+  40% {
+    translate: calc((var(--star-size) + 20px) * 2 );
+  }
+  60% {
+    translate: calc((var(--star-size) + 20px) * 3 );
+  }
+  80% {
+    translate: calc((var(--star-size) + 20px) * 4 );
+  }
+  100% {
+    translate: calc((var(--star-size) + 20px) * 5 );
+  }
+}
+
+.about__quote {
+  width: 100dvw;
+  left: 50%;
+  translate: -50%;
+  padding: 15px;
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 500;
+  color: #D8D8D8;
+  background-image: url(../images/about_cover.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+
+.about__quote::after {
+  content: '';
+  display: block;
+  block-size: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: var(--col-hero-cover);
+  opacity: 80%;
+}
+
+.about__quote > p {
+  position: relative;
+  z-index: 1;
+}
