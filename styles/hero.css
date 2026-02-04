@@ -244,15 +244,14 @@
 .hero__button {
   grid-row: 3;
   grid-column: span 1 / -1;
-  min-inline-size: 330px;
+  /* min-inline-size: 330px; */
   color: #FBF6FF;
   background-color: #150A19;
   border-radius: 25px;
-  padding: 22px 45px;
   font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 500;
-  padding: 25px 50px;
+  padding: 25px 0;
 }
 
 .quote-left {

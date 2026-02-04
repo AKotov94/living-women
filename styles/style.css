@@ -8,8 +8,23 @@
 
 .main {
   font-family: var(--font-main);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--col-text);
   text-wrap: pretty;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* * {
+  border: 1px solid red;
+} */

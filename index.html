@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/hero.css">
   <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/price.css">
 
   <link rel="icon" href=".ico" />
   <link rel="icon" href=".svg" />
@@ -144,7 +145,41 @@
       </div>
     </section>
     <section class="price">
-
+      <h2 class="section-header">Услуги и цены</h2>
+      <ul class="price__cards">
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Психологическое консультирование</h3>
+            <p class="price__item-desc">Если вы чувствуете необходимость поддержки, желаете найти гармонию в жизни, понять себя, хотите разобраться в своих мыслях</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Фокус-группа</h3>
+            <p class="price__item-desc">Живой формат в малой группе, где мы вместе исследуем ваши нумерологические коды, вы сможете глубже понять себя, свои таланты, уроки</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Нумерологический разбор, архетипы</h3>
+            <p class="price__item-desc">Если вы готовы к самопознанию и новым открытиям, эта услуга поможет вам лучше понять себя, свои внутренние ресурсы и жизненные цели. Используя</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Телесные практики</h3>
+            <p class="price__item-desc">Эта услуга подходит тем, кто хочет лучше понять и услышать свое тело, снять напряжение и восстановить внутреннюю гармонию. Если вы ищете</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+      </ul>
     </section>
     <section class="feedback">
 
@@ -160,4 +195,17 @@
 
   </footer>
 </body>
+<script>
+  document.querySelectorAll('.more-button').forEach(button => {
+    button.addEventListener('click', () => {
+      if (button.textContent === "Подробнее") {
+        button.textContent = "Скрыть"
+      } else {
+        button.textContent = "Подробнее"
+      }
+      button.classList.toggle('show-more')
+    })
+  });
+
+</script>
 </html>

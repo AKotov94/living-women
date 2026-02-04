@@ -27,21 +27,13 @@
 .about {
   max-inline-size: var(--lo-container-maxSize);
   margin: 0 auto;
-  /* background-color: #ff000090; */
   padding: 0 var(--lo-main-padding);
-  min-block-size: 20vh;
-}
-
-.quote {
-  display: flex;
 }
 
 .price {
   max-inline-size: var(--lo-container-maxSize);
   margin: 0 auto;
-  background-color: #00ff0090;
   padding: 0 var(--lo-main-padding);
-  min-block-size: 20vh;
 }
 
 .feedback {
