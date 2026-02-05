@@ -64,7 +64,7 @@
 }
 
 .price__item-desc:has(+ .show-more)  {
-  display: block;
+  -webkit-line-clamp: unset;
 }
 
 .more-button {

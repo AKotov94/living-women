@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./styles/hero.css">
   <link rel="stylesheet" href="./styles/about.css">
   <link rel="stylesheet" href="./styles/price.css">
-  <link rel="stylesheet" href="./styles/feedback">
+  <link rel="stylesheet" href="./styles/feedback.css">
 
   <link rel="icon" href=".ico" />
   <link rel="icon" href=".svg" />
@@ -185,6 +185,14 @@
     </section>
     <section class="feedback">
       <h2 class="section-header">Отзывы</h2>
+      <div class="embla feedback__slider">
+        <div class="embla__viewport">
+          <div class="embla__container">
+    
+        </div>
+        <button class="embla__prev">Scroll to prev</button>
+        <button class="embla__next">Scroll to next</button>
+      </div>
     </section>
     <section class="request">
 
@@ -196,18 +204,15 @@
   <footer class="footer">
 
   </footer>
-</body>
-<script>
-  document.querySelectorAll('.more-button').forEach(button => {
-    button.addEventListener('click', () => {
-      if (button.textContent === "Подробнее") {
-        button.textContent = "Скрыть"
-      } else {
-        button.textContent = "Подробнее"
-      }
-      button.classList.toggle('show-more')
-    })
-  });
 
-</script>
+  <template id="feedback-slide-template">
+    <div class="embla__slide feedback__slide">
+      <div class="feedback_author-container">
+        <span class="feedback__author"></span>  
+      </div>
+      <p class="feedback__text"></p>
+    </div>
+  </template>
+</body>
+<script type="module" src="/main.js"></script>
 </html>
