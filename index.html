@@ -187,11 +187,11 @@
       <h2 class="section-header">Отзывы</h2>
       <div class="embla feedback__slider">
         <div class="embla__viewport">
-          <div class="embla__container">
-    
+          <div class="embla__container"></div>
         </div>
         <button class="embla__prev">Scroll to prev</button>
         <button class="embla__next">Scroll to next</button>
+        <div class="embla__dots feedback__dots"></div>
       </div>
     </section>
     <section class="request">
@@ -214,5 +214,10 @@
     </div>
   </template>
 </body>
-<script type="module" src="/main.js"></script>
+<script type="module" src="/src/main.js"></script>
+<script type="text/template" id="embla-dot-template">
+  <button class="embla__dot feedback__dot">
+    
+  </button>
+</script>
 </html>

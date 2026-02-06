@@ -36,9 +36,24 @@
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
+  gap: 20px;
 }
 
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.embla__prev,
+.embla__next {
+  display: none;
+}
+
+.embla__dot {
+  min-block-size: 50px;
+}
+
+
+.embla :is(.embla__dot--selected) {
+  background-color: #150A18;
 }

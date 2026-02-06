@@ -1,5 +1,7 @@
 .feedback__slider {
-
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .feedback__slide {
@@ -13,10 +15,10 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 15px;
   background-repeat: no-repeat;
   position: relative;
   color: #C9BECF;
+  align-items: center;
 }
 
 .feedback__slide::after {
@@ -44,11 +46,26 @@
 }
 
 .feedback__text {
-  padding: 0 10px;
+  padding: 15px 10px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 15;
   overflow: hidden;
   text-align: center;
   z-index: 1;
+  margin: auto;
+}
+
+.feedback__dot {
+  min-block-size: 25px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px solid #150A18;
+  background-color: transparent;
+}
+
+.feedback__dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
