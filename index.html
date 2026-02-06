@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" href=".ico" />
+  <link rel="icon" href=".svg" />
+  <link rel="apple-touch-icon" href=".png" />
+  
+  <title>Живая женщина</title>
+  <script type="module" crossorigin src="./assets/index-bWrdzpG8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BkdsWlpt.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a href="" class="logo">живая женщина</a>
+      <div class="header__menu">
+        <nav class="navigation pc">
+          <ul class="navigation__links-list">
+            <li class="navigation__item"><a href="">Обо мне</a></li>
+            <li class="navigation__item"><a href="">С чем работаю</a></li>
+            <li class="navigation__item"><a href="">Отзывы</a></li>
+            <li class="navigation__item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <button type="button" onclick="window['header__menu'].showModal()" class="burger__button">
+          <svg viewBox="0 0 31 18" xmlns="http://www.w3.org/2000/svg" width="32px" class="burger__svg">
+            <use href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='31'%20height='18'%20fill='none'%3e%3cpath%20stroke='%23150A18'%20stroke-linecap='round'%20d='M1%201h29M1%2017h29M30%209H9'/%3e%3c/svg%3e"></use>
+          </svg>
+        </button>
+        <dialog class="header__menu" id="header__menu">
+          <nav class="navigation">
+            <ul class="navigation__links-list mobile">
+              <li class="navigation__item"><a href="">Обо мне</a></li>
+              <li class="navigation__item"><a href="">С чем работаю</a></li>
+              <li class="navigation__item"><a href="">Отзывы</a></li>
+              <li class="navigation__item"><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="" class="social__link">
+                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                  <use href="./assets/whatsapp_icon-C2fzy3aV.svg#whatsapp_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="social__link">
+                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                  <use href="./assets/telegram_icon-CTtI68KH.svg#telegram_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="social__link">
+                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                  <use href="./assets/vk_icon-Cv0xDSTn.svg#vk_icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button type="button" onclick="window['header__menu'].close()" class="burger__button-close">
+            <svg viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg" width="25px">
+              <use href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='23'%20height='23'%20fill='none'%3e%3cpath%20stroke='%23150A18'%20stroke-linecap='round'%20d='M1%2021.506%2021.506%201M1%201l20.506%2020.506'/%3e%3c/svg%3e"></use>
+            </svg>
+          </button>
+        </dialog>
+        
+        <ul class="socials pc">
+          <li class="socials__item">
+            <a href="" class="social__link">
+              <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                <use href="./assets/whatsapp_icon-C2fzy3aV.svg#whatsapp_icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="social__link">
+              <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                <use href="./assets/telegram_icon-CTtI68KH.svg#telegram_icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="social__link">
+              <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="socials__icon">
+                <use href="./assets/vk_icon-Cv0xDSTn.svg#vk_icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__name">Татьяна Малахова</p>
+        <p class="hero__desc pc">психолог, фасилитатор женских групповых программ, работающий в области личностного роста и гармонизации внутреннего состояния женщин</p>
+        <p class="hero__desc mobile">психолог, фасилитатор женских групповых программ</p>
+        <!-- <img src="./images/hero-img-right.webp" alt="" class="hero__img-right"> -->
+        <button class="hero__button" type="button" onclick="window['record'].showModal()" aria-controls="record">
+          Записаться на консультацию
+        </button>
+        <p class="hero__quote quote-left pc">“Чем глубже я изучаю себя, тем яснее вижу”</p>
+        <p class="hero__quote quote-right">“Моя работа — помочь тебе снова прикоснуться к себе настоящей”</p>
+        <dialog id="record">
+          <h2>Записаться на консультацию</h2>
+          <form action="">
+            <label for=""></label>
+            <input type="text">
+            <button></button>
+          </form>
+          <button type="button" onclick="window['record'].close()">
+            закрыть
+          </button>
+        </dialog>
+      </div>
+    </section>
+    <section class="about">
+      <h1 class="section-header">Как я пришла в психологию</h1>
+      <p>Меня зовут Малахова Татьяна, и я практикующий психолог, фасилитатор женских групповых программ, работающий в области личностного роста и гармонизации внутреннего состояния женщин.</p>
+      <p>Мой путь начался с изучения эзотерических дисциплин — с интереса к невидимому, к таинственным слоям бытия. Этот интерес стал фундаментом моей профессиональной и внутренней зрелости.</p>
+      <img src="./assets/cards-B6q18wdg.webp" alt="" class="about__pic">
+      <p>Со временем этот путь привёл меня к психологии — как к пространству, где душа может говорить на своём языке. Я выбрала процессуально-ориентированный подход, потому что он — про живое. Про человека как процесс, как танец, как уникальную историю, разворачивающуюся в каждом моменте.</p>
+      <svg viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg" class="about__star">
+        <use href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='55'%20height='55'%20fill='none'%3e%3cg%20filter='url(%23a)'%3e%3cpath%20fill='%23B9ABC2'%20d='m27.2607%204%202.5289%2014.8874L39.9658%207.7305l-5.9213%2013.8913%2014.5926-3.8841-12.4915%208.4849%2014.3759%204.6218-15.0957.3844%209.5951%2011.6604-12.9073-7.8379%201.7679%2014.9968-6.6208-13.5719L20.64%2050.0481l1.7678-14.9968-12.9072%207.8379%209.5951-11.6604-15.0958-.3844%2014.376-4.6218-12.4915-8.4849%2014.5926%203.8841-5.9213-13.8913%2010.1762%2011.1569L27.2607%204Z'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='a'%20width='54.5215'%20height='54.0481'%20x='0'%20y='0'%20color-interpolation-filters='sRGB'%20filterUnits='userSpaceOnUse'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20result='effect1_foregroundBlur_116_208'%20stdDeviation='2'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"></use>
+      </svg>
+      <p>Я умею видеть глубину там, где кажется — пустота. Силу там, где чувствуется только уязвимость. Свет там, где долго была тьма. Я не веду и не направляю. Я иду рядом — в моменты обнажённости, хрупкости, трансформации. Моя работа — помочь тебе снова прикоснуться к себе настоящей. К телу, к интуиции,к жизни.</p>
+      <p class="about__slogan">С любовью. Без спешки. С уважением к твоему ритму.</p>
+      <div class="about__quote">
+        <p class="quote__text">“Мы - живые творения, сотканные из истории, любви и боли.</p>
+        <p class="quote__text">Каждое наше тело - уникально и прекрасно в своей неповторимости.”</p>
+      </div>
+    </section>
+    <section class="price">
+      <h2 class="section-header">Услуги и цены</h2>
+      <ul class="price__cards">
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Психологическое консультирование</h3>
+            <p class="price__item-desc">Если вы чувствуете необходимость поддержки, желаете найти гармонию в жизни, понять себя, хотите разобраться в своих мыслях, я здесь, чтобы помочь вам на пути к внутреннему равновесию и самопониманию. Моя миссия — создать безопасное пространство, где вы сможете открыто говорить о своих проблемах и находить решения. Вместе мы преодолеем трудности и достигнем новых уровней самосовершенствования и внутренней гармонии.</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Фокус-группа</h3>
+            <p class="price__item-desc">Живой формат в малой группе, где мы вместе исследуем ваши нумерологические коды, вы сможете глубже понять себя, свои таланты, уроки и потенциал. Это не просто диагностика - это глубокое узнавание себя в зеркале чисел через диалог и обратную связь.
+            Индивидуальное сопровождение для тех, кто хочет глубже изучить нумерологию и применять её в жизни или работе. Поддержка, обратная связь и рост на каждом этапе.</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Нумерологический разбор, архетипы</h3>
+            <p class="price__item-desc">Если вы готовы к самопознанию и новым открытиям, эта услуга поможет вам лучше понять себя, свои внутренние ресурсы и жизненные цели. Используя нумерологию, архетипы и Таро, я помогу вам найти ответы на важные вопросы, обрести гармонию и почувствовать внутреннюю поддержку. Это возможность заглянуть вглубь себя и сделать шаги к более осознанной и наполненной жизни.</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+        <li class="price__item">
+          <div class="price__item-container" data-price="3000₽">
+            <h3 class="price__item-header">Телесные практики</h3>
+            <p class="price__item-desc">Эта услуга подходит тем, кто хочет лучше понять и услышать свое тело, снять напряжение и восстановить внутреннюю гармонию. Если вы ищете способы почувствовать себя более спокойно, сбалансировано и наполненно — я буду рада сопровождать вас на этом пути.</p>
+            <button class="more-button" type="button">Подробнее</button>
+          </div>
+          <button class="price__button" type="button" onclick="window['record'].showModal()" aria-controls="record">Записаться</button>
+        </li>
+      </ul>
+    </section>
+    <section class="feedback">
+      <h2 class="section-header">Отзывы</h2>
+      <div class="embla feedback__slider">
+        <div class="embla__viewport">
+          <div class="embla__container">
+    
+        </div>
+        <button class="embla__prev">Scroll to prev</button>
+        <button class="embla__next">Scroll to next</button>
+      </div>
+    </section>
+    <section class="request">
+
+    </section>
+    <section class="contacts">
+
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
+
+  <template id="feedback-slide-template">
+    <div class="embla__slide feedback__slide">
+      <div class="feedback_author-container">
+        <span class="feedback__author"></span>  
+      </div>
+      <p class="feedback__text"></p>
+    </div>
+  </template>
+</body>
+</html>
